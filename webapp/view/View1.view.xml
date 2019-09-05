@@ -1,0 +1,31 @@
+<mvc:View 
+	controllerName="ovly.logica.controller.View1" 
+	xmlns:mvc="sap.ui.core.mvc"
+	displayBlock="true" xmlns="sap.m">
+	<Shell id="shell">
+		<App id="app">
+			<pages>
+				<Page id="page" title="{i18n>title}">
+					<content>
+						<Panel>
+							<Switch customTextOff="Não" customTextOn="Sim" type="AcceptReject"  change="onChangeSwitch"   />
+							<Button id="btn_a" text="Aperte aqui" type="Emphasized" press="onPress" />
+							<Button text="Aperta lá" type="Accept" press="onPress" />
+						</Panel>
+						<Panel>
+							<Input id="name" submit="onAdd" />
+							<Button icon="sap-icon://add" press="onAdd" />
+							<Button icon="sap-icon://delete" press="onDelete" />
+							
+							<List id="list" >
+								<items>
+									<StandardListItem title="Primeiro" />
+								</items>
+							</List>
+						</Panel>
+					</content>
+				</Page>
+			</pages>
+		</App>
+	</Shell>
+</mvc:View>
